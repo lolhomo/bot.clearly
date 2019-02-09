@@ -1,0 +1,13 @@
+import discord
+from discord.ext import commands
+import asyncio
+
+bot = commands.Bot(command_prefix = 'C')
+
+@bot.event
+async def on_ready():
+	print('hij is online!')
+	print(bot.user.name)
+	print(bot.user.id)
+  
+  bot.run('NTQzMDc2Njc3NzY1NTYyMzY4.Dz3V7g.9uPThDH_dHaDlTjoKsFWPJIxhS4')
